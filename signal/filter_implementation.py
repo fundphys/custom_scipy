@@ -4,19 +4,17 @@ __all__ = ['ba_filter', '_sosfilt']
 
 def ba_filter(b, a, sig):
     res = np.zeros(sig.size)
-    
+    # Use direct II transposed structure:
     for i in range(sig.size):
         tmp = 0.0
         for j in range(b.size):
             if i < j:
                 continue
             tmp += b[j] * sig[i - j]
-    
         for j in range(a.size):
             if i < j:
                 continue
             tmp -= a[j] * res[i - j]
-        
         tmp /= a[0]
         res[i] = tmp
     return res
