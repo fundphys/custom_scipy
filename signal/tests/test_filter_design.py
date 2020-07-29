@@ -1,5 +1,9 @@
 import warnings
 
+import sys
+sys.path.append("..")
+sys.path.append("../..")
+
 from distutils.version import LooseVersion
 import numpy as np
 from numpy.testing import (assert_array_almost_equal,

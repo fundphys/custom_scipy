@@ -16,7 +16,7 @@ from numpy.polynomial.polynomial import polyvalfromroots
 
 
 
-__all__ = ['findfreqs', 'freqs', 'freqz', 'tf2zpk', '   ', 'normalize',
+__all__ = ['findfreqs', 'freqs', 'freqz', 'tf2zpk', 'zpk2tf', 'normalize',
            'lp2lp', 'lp2hp', 'lp2bp', 'lp2bs', 'bilinear', 'iirdesign',
            'iirfilter', 'butter', 'cheby1', 'cheby2', 'ellip', 'bessel',
            'band_stop_obj', 'buttord', 'cheb1ord', 'cheb2ord', 'ellipord',
